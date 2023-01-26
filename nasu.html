@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scake=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>やさいのヒント</title>
+	<!-- adobefont -->
+	<script>
+		(function(d) {
+		  var config = {
+			kitId: 'fmv4ski',
+			scriptTimeout: 3000,
+			async: true
+		  },
+		  h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+		})(document);
+		</script>
+	<!-- swiper.js -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- luxy.js -->
+	<script type="text/javascript" src="js/luxy.min.js" charset="utf-8"></script>
+	<!-- sclollanimation -->
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<!-- フォーム -->
+	<script src="https://sdk.form.run/js/v2/embed.js"></script>
+</head>
+<body>
+
+<!-- ローディング画面 -->
+<div class="loader-bg">
+	<div class="loader">
+		<div class="sk-chase">
+			<div class="sk-chase-dot"></div>
+			<div class="sk-chase-dot"></div>
+			<div class="sk-chase-dot"></div>
+			<div class="sk-chase-dot"></div>
+			<div class="sk-chase-dot"></div>
+			<div class="sk-chase-dot"></div>
+		  </div>
+	</div>
+</div>
+
+<div id="ヘッダーfixed2">
+	<div class="ヘッダー子要素fixed">
+		<div class="ロゴ"><a href="index.html"><img class="ロゴ" src="/assets/images/headerrogo.png"></a></div>
+		<div class="メニュー">
+			<div class="メニューp"><a href="about.html">やさいのヒントとは？</a></div>
+			<div class="メニューp"><a href="main.html">保存方法一覧</a></div>
+			<div class="メニューp"><a href="contact.html">お問い合わせ</a></div>
+		</div>
+		<div class="item">
+			<button class="menu-trigger" id="menu05">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</button>
+		  </div>
+		  <div class="背景黒"></div>
+	
+
+		  <div id="ハンバーガー">
+			<div class="ハンバーガーメニュー">
+			  <div class="ハンバーガーメニューp changetime01"><a href="about.html"><div style="font-size:0.4em;">ABOUT&nbspUS</div>やさいのヒントとは？</a></div>
+			  <div class="ハンバーガーメニューp changetime02"><a href="main.html"><div style="font-size:0.4em;">HOW&nbspTO&nbspSTORE&nbspVEGETABLES</div>保存方法一覧</a></div>
+			  <div class="ハンバーガーメニューp changetime03"><a href="contact.html"><div style="font-size:0.4em;">CONTACT</div>お問い合わせ</a></div>
+		  </div>
+		  </div>
+	</div>
+</div>
+
+<!-- トップへ戻るボタン -->
+<a id="pagetop" href="#"><i class="fa-solid fa-angle-up"></i></a>
+
+
+<!-- メインコンテンツ -->
+<div id="luxy">
+
+	<div class="セクション" style="width:100%;">
+			<span class="サブタイトル">EGGPLANT</span>
+				<h2>なす</h2>
+		<video class="動画" src="/assets/images/nasu.mp4"muted playsinline controls>
+		</video>
+		<a href="main.html"><div class="コンタクトボタン" style="margin-top:40px; width:100px;">一覧に戻る</div></a>
+		  </div>
+
+<footer class="フッター">
+	<div class="ヘッダー子要素">
+		<div class="ロゴ"><a href="index.html"><img class="ロゴ" src="/assets/images/headerrogo.png"></a></div>
+		<div class="メニュー">
+			<div class="メニューp"><a href="about.html">やさいのヒントとは？</a></div>
+			<div class="メニューp"><a href="main.html">保存方法一覧</a></div>
+			<div class="メニューp"><a href="contact.html">お問い合わせ</a></div>
+		</div>
+	</div>	
+	<div class="コピーライト">&copy 2023 Takagi Hikaru All Right Reserved.</div>
+</footer>
+
+
+</div>
+
+<script>// カルーセル
+		var swiper = new Swiper(".mySwiper", {
+		  slidesPerView: 1,
+		  spaceBetween: 30,
+		  loop: true,
+		  speed:800,
+		  pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		  },
+		  navigation: {
+     		 nextEl: '.swiper-button-next',
+      		 prevEl: '.swiper-button-prev',
+    		},
+			autoplay: {
+        	 delay: 3000,
+       	 	 disableOnInteraction: false,
+     	 	},
+			  breakpoints: { // ブレークポイント
+    		600: { // 画面幅600px以上で適用
+      		slidesPerView: 2,
+    		},
+     		 1025: { // 画面幅1025px以上で適用
+      		slidesPerView: 3,
+    		}
+  			},
+		});
+</script>
+
+<script>// luxy
+	luxy.init();
+</script> 
+
+<script>// スクロールアニメーション
+ScrollReveal().reveal(".セクション h2", { 
+	duration: 1700,     // アニメーション時間(ミリ秒)
+	viewFactor: 0.6,    // 0〜1 画面のどれくらいが表示されたらアニメーションし始めるか
+	origin: 'bottom',   // 下から0.5
+	distance: '30px',  // 100px移動してくる
+	reset: true,        // 何回もアニメーションさせる
+})
+ScrollReveal().reveal(".サブタイトル", { 
+	duration: 1000,     // アニメーション時間(ミリ秒)
+	viewFactor: 0.6,    // 0〜1 画面のどれくらいが表示されたらアニメーションし始めるか
+	origin: 'bottom',   // 下から
+	distance: '30px',  // 100px移動してくる
+	reset: true,        // 何回もアニメーションさせる
+})
+ScrollReveal().reveal(".もっと見るボタン", { 
+	duration: 1000,     // アニメーション時間(ミリ秒)
+	viewFactor: 0.6,    // 0〜1 画面のどれくらいが表示されたらアニメーションし始めるか
+	scale: '0.8',   // 下から
+	reset: true,        // 何回もアニメーションさせる
+})
+ScrollReveal().reveal(".野菜", { 
+	duration: 1500,     // アニメーション時間(ミリ秒)
+	viewFactor: 0.5,    // 0〜1 画面のどれくらいが表示されたらアニメーションし始めるか
+	scale: '0.9',   // 下から
+	reset: true,        // 何回もアニメーションさせる
+})
+</script>
+
+<script>//　スクロール固定
+(function() {//トップへ戻る
+  const fh = document.getElementById('pagetop');
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 800) {
+      fh.classList.add('is-show2');
+    } else {
+      fh.classList.remove('is-show2');
+    }
+  });
+}());
+</script>
+
+<script>// ローディング画面
+	$(function(){
+  //読み込みが完了したら実行する
+  $(window).on('load',function(){
+    //ローディングアニメーションをフェードアウト
+    $('.loader').delay(600).fadeOut(600);
+    //背景色をフェードアウト
+    $('.loader-bg').delay(900).fadeOut(800);
+});
+
+  //ページの読み込みが完了してなくても5秒後にアニメーションを非表示にする
+  setTimeout(function(){
+    $('.loader-bg').fadeOut(600);
+  },5000);
+});
+</script>
+
+<script>//トップへ戻るボタン
+	$('#pagetop').on('click', ()=>{
+    $('body,html').animate({ scrollTop: 0 }, 1000);
+    return false;   
+});
+</script>
+
+<script>//ハンバーガーメニュー
+	$(function(){
+		$('.menu-trigger').on('click', function() {
+		  $(this).toggleClass('active');
+		  return false;
+		});
+	  });
+	
+	  $(function() {
+		$(".menu-trigger").click(function() {
+			$(".ハンバーガーメニュー").toggleClass("none");
+		});
+	}); 
+	
+	$(function() {
+		$(".menu-trigger").click(function() {
+			$(".背景黒").toggleClass("黒");
+		});
+	});
+	$(function() {
+    $(".menu-trigger").click(function() {
+        $(".ハンバーガーメニューp").toggleClass("fadeUp");
+    });
+});
+	 
+	 </script>
+
+
+
+</body>
+</html>
