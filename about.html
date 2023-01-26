@@ -79,15 +79,15 @@
 <!-- メインコンテンツ -->
 <div id="luxy">
 
-	<div class="セクション" style="width:100%; margin-top:50px;">
+	<div class="セクション width100" style="margin-top:50px;">
 		<span class="サブタイトル">ABOUT&nbspUS</span>
 		<h2>やさいのヒントとは？</h2>
 		<div class="about画像">
-			<div class="about1 luxy-el" data-speed-y="-1" data-speed-x="-2" data-horizontal="1" ><img src="assets/images/about1.png"><img class="about4" src="assets/images/about4.png" style="width:100px;"><div class="copy1"><img src="assets/images/about4.png" style="width:80px;"></div></div>
-			<div class="about2 luxy-el"  data-speed-y="-1" data-speed-x="2" data-horizontal="1"><img src="assets/images/about2.png"><img class="about5" src="assets/images/about5.png" style="width:70px;"><div class="copy2"><img src="assets/images/about5.png" style="width:50px;"></div></div>
+			<div class="about1 luxy-el" data-speed-y="-2" data-speed-x="-4" data-horizontal="1" ><img src="assets/images/about1.png"><img class="about4" src="assets/images/about4.png" style="width:100px;"><div class="copy1"><img src="assets/images/about4.png"></div></div>
+			<div class="about2 luxy-el"  data-speed-y="-2" data-speed-x="4" data-horizontal="1"><img src="assets/images/about2.png"><img class="about5" src="assets/images/about5.png" style="width:70px;"><div class="copy2"><img src="assets/images/about5.png"></div></div>
 			<img class="about3 luxy-el" data-speed-y="-2" data-offset="0" src="assets/images/about3.png">
 		</div>
-		<p>
+		<p style="padding-top:30px;">
 			やさいのヒントとは、やさいの保存方法をまとめたWEBサイトです。<br>
 			「野菜の下処理ってどうするの？」「どう保存すれば長持ちするのか分からない」「保存期間はどのくらいなのかな」<br>
 			こんなお悩みはありませんか？<br>
@@ -194,7 +194,53 @@ ScrollReveal().reveal(".もっと見るボタン", {
 	scale: '0.8',   // 下から
 	reset: true,        // 何回もアニメーションさせる
 })
-ScrollReveal().reveal(".step1", { 
+// ScrollReveal().reveal(".step1", { 
+// 	duration: 1000,     // アニメーション時間(ミリ秒)
+// 	viewFactor: 0.6,    // 0〜1 画面のどれくらいが表示されたらアニメーションし始めるか
+// 	distance: '30px',  // 100px移動してくる
+// 	reset: true,        // 何回もアニメーションさせる
+// })
+// ScrollReveal().reveal(".step2", { 
+// 	duration: 2000,     // アニメーション時間(ミリ秒)
+// 	viewFactor: 0.6,    // 0〜1 画面のどれくらいが表示されたらアニメーションし始めるか
+// 	distance: '30px',  // 100px移動してくる
+// 	reset: true,        // 何回もアニメーションさせるs
+// })
+// ScrollReveal().reveal(".step3", { 
+// 	duration: 3000,     // アニメーション時間(ミリ秒)
+// 	viewFactor: 0.6,    // 0〜1 画面のどれくらいが表示されたらアニメーションし始めるか
+// 	distance: '30px',  // 100px移動してくる
+// 	reset: true,        // 何回もアニメーションさせる
+// })
+
+const mediaQuery = window.matchMedia('(max-width: 960px)');
+// ページが読み込まれた時に実行
+handle(mediaQuery);
+// ウィンドウサイズを変更しても実行（ブレイクポイントの監視）
+mediaQuery.addListener(handle);
+function handle(mm) {
+  if (mm.matches) {
+	ScrollReveal().reveal(".step1", { 
+	duration: 1000,     // アニメーション時間(ミリ秒)
+	viewFactor: 0.6,    // 0〜1 画面のどれくらいが表示されたらアニメーションし始めるか
+	distance: '30px',  // 100px移動してくる
+	reset: false,        // 何回もアニメーションさせる
+})
+ScrollReveal().reveal(".step2", { 
+	duration: 1000,     // アニメーション時間(ミリ秒)
+	viewFactor: 0.6,    // 0〜1 画面のどれくらいが表示されたらアニメーションし始めるか
+	distance: '30px',  // 100px移動してくる
+	reset: false,        // 何回もアニメーションさせる
+})
+ScrollReveal().reveal(".step3", { 
+	duration: 1000,     // アニメーション時間(ミリ秒)
+	viewFactor: 0.6,    // 0〜1 画面のどれくらいが表示されたらアニメーションし始めるか
+	distance: '30px',  // 100px移動してくる
+	reset: false,        // 何回もアニメーションさせる
+})
+    // ウィンドウサイズ768px以下のときの処理
+  } else {
+	ScrollReveal().reveal(".step1", { 
 	duration: 1000,     // アニメーション時間(ミリ秒)
 	viewFactor: 0.6,    // 0〜1 画面のどれくらいが表示されたらアニメーションし始めるか
 	distance: '30px',  // 100px移動してくる
@@ -212,6 +258,9 @@ ScrollReveal().reveal(".step3", {
 	distance: '30px',  // 100px移動してくる
 	reset: true,        // 何回もアニメーションさせる
 })
+    // それ以外の処理
+  }
+}
 </script>
 
 <script>//　スクロール固定

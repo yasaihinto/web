@@ -427,13 +427,13 @@ a:hover {
 .about1{
   width:230px;
     top:130px;
-    left:250px;
+    left:220px;
     position: absolute;
 }
 .about2{
   width:230px;
     top:130px;
-    right:250px;
+    right:220px;
     z-index:1;
     position: absolute;
 }
@@ -743,7 +743,7 @@ a:hover {
   background-repeat:no-repeat;
   position: relative;
   top:-300px;
-  left:700px;
+  left:500px;
   width:700px;
   height:700px;
   margin-top:-700px;
@@ -864,12 +864,12 @@ a:hover {
 }
 .about1{
   top:150px;
-  left:0px;
+  left:-20px;
   position: absolute;
 }
 .about2{
   top:150px;
-  right:0px;
+  right:-20px;
   z-index:1;
   position: absolute;
 }
@@ -897,6 +897,14 @@ a:hover {
   top:30px;
   margin:auto;
 }
+.copy1 img{
+  width:80px;
+ }
+
+ .copy2 img{
+  width:55px;
+ }
+
 .howto{
   display: flex;
   flex-direction: column;
@@ -942,7 +950,7 @@ a:hover {
   text-align:left;
   padding-bottom:40px;
   padding-left:60px;
-  font-size:1.2em;
+  font-size:1em;
   font-weight: bold;
   transform:0.5s;
   color:#dd755e;
@@ -953,7 +961,10 @@ a:hover {
 .メニュー{
   display: none;
 }
-
+.コンタクトセクション4{
+  top:-400px;
+  left:200px;
+}
 }
 
 /* スマホ対応 */
@@ -1008,25 +1019,28 @@ a:hover {
   .タイトルロゴ{
     z-index:4;
   }
-
+.about画像{
+  width:100%;
+  height:450px;
+}
 .about1{
-  top:100px;
-  left:-30px;
+  top:120px;
+  left:0px;
   position: absolute;
 }
 .about2{
-  top:180px;
-  right:-30px;
+  top:200px;
+  right:0px;
   z-index:1;
   position: absolute;
 }
 .about1 img,.about2 img{
- width:170px;
+ width:130px;
 }
 .about3{
   position: absolute;
   width:100px;
-  bottom:-20px;
+  bottom:-30px;
   left:0;
   right:0;
 }
@@ -1041,6 +1055,21 @@ a:hover {
   top:30px;
   margin:auto;
 }
+.copy1{
+top:25px;
+right:75px;
+}
+.copy2{
+top:30px;
+right:85px;
+}
+.copy1 img{
+  width:65px;
+ }
+
+ .copy2 img{
+  width:45px;
+ }
 .ロゴ img{
   height:18px;
 }
@@ -1096,9 +1125,15 @@ a:hover {
   .item {
     display: none;
   }
+  .about画像{
+    width:100%;
+  }
   
 }
 
+@media screen and (max-width: 350px) {
+
+}
 
 
 .item {
@@ -1132,7 +1167,7 @@ a:hover {
 .menu-trigger {
   position: relative;
   width: 28px;
-  height: 20px;
+  height: 15px;
   background: none;
   border: none;
   appearance: none;
@@ -1142,15 +1177,15 @@ a:hover {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 1.5px;
   background-color: black;
   border-radius: 4px;
 }
 .menu-trigger span:nth-of-type(1) {
-  top: -3px;
+  top: -8px;
 }
 .menu-trigger span:nth-of-type(2) {
-  top: 7.5px;
+  top: 2px;
 }
 .menu-trigger span:nth-of-type(3) {
   bottom: 0;
@@ -1247,3 +1282,14 @@ a:hover {
 .changetime03{
   animation-duration:2s;
    }
+
+.width100{
+  width: 100%;
+}
+.underline{
+  width:100px;
+  height:1px;
+  margin:auto;
+  padding:10px 0px;
+  color:#d7edee;
+}
