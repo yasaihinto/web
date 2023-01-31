@@ -967,6 +967,10 @@ a:hover {
 }
 .お問い合わせカード{
   width:80%;
+  margin-top:0px;
+}
+.about説明{
+  margin-top:0px;
 }
 }
 
@@ -1131,7 +1135,12 @@ right:85px;
   .about画像{
     width:100%;
   }
-  
+  .お問い合わせカード{
+    margin-top:150px;
+  }
+  .about説明{
+    margin-top:50px;
+  }
 }
 
 @media screen and (max-width: 350px) {
