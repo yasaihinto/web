@@ -827,6 +827,7 @@ a:hover {
   
 .about画像{
   width:65%;
+  margin-top:0px;
 }
 
 .レスポンシブ野菜大{
@@ -1090,7 +1091,7 @@ right:85px;
   padding-top:15px;
 }
 .動画{
-  margin-top:80px;
+  margin-top:30px;
   width:95%;
   height:auto;
 }
