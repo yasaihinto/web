@@ -402,6 +402,7 @@ a:hover {
     margin: auto;
     border-radius: 100px;
     transition:0.2s;
+    display: block;
     /* border: solid 1px; */
 }
 .もっと見るボタン:hover{
@@ -773,6 +774,7 @@ a:hover {
     font-size: 0.9em;
 }
 .コンタクトボタン{
+  display: block;
     padding:10px 20px;
     background-color:#d7edee;
     font-size:0.8em;
