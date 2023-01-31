@@ -132,9 +132,18 @@
 		});
 </script>
 
-<script>// luxy
-	luxy.init();
-</script> 
+<!-- <script>//luxy
+
+	if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0) {
+		// スマートフォン向けの記述
+	} else if (navigator.userAgent.indexOf('iPad') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+		// タブレット向けの記述
+	} else {
+		// PC向けの記述
+		luxy.init();
+	}
+	
+	</script> -->
 
 <script>// スクロールアニメーション
 ScrollReveal().reveal(".セクション h2", { 
