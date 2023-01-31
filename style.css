@@ -440,7 +440,7 @@ a:hover {
 .about3{
     position: absolute;
     width:150px;
-    bottom:-20px;
+    bottom:-10px;
     left:0;
     right:0;
     margin: auto;
@@ -877,7 +877,7 @@ a:hover {
 .about3{
   position: absolute;
   width:120px;
-  bottom:-20px;
+  bottom:0px;
   left:0;
   right:0;
 }
@@ -967,7 +967,7 @@ a:hover {
 }
 .お問い合わせカード{
   width:80%;
-  margin-top:150px;
+  margin-top:30px;
 }
 .about説明{
   margin-top:0px;
@@ -1028,7 +1028,7 @@ a:hover {
   }
 .about画像{
   width:100%;
-  height:450px;
+  height:480px;
 }
 .about1{
   top:70px;
@@ -1036,7 +1036,7 @@ a:hover {
   position: absolute;
 }
 .about2{
-  top:180px;
+  top:190px;
   right:0px;
   z-index:1;
   position: absolute;
@@ -1047,7 +1047,7 @@ a:hover {
 .about3{
   position: absolute;
   width:100px;
-  bottom:-30px;
+  bottom:0px;
   left:0;
   right:0;
 }
