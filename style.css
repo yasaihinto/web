@@ -720,7 +720,6 @@ a:hover {
   position: relative;
   top:-700px;
   left:0;
-  margin-top:-500px;
   z-index:-1;
   overflow: hidden;
   object-fit: cover;
@@ -733,7 +732,6 @@ a:hover {
   position: relative;
   top:-500px;
   left:0;
-  margin-top:-500px;
   z-index:-1;
   overflow: hidden;
   object-fit: cover;
@@ -746,7 +744,6 @@ a:hover {
   position: relative;
   top:-300px;
   left:500px;
-  margin-top:-700px;
   z-index:-1;
   overflow: hidden;
   object-fit: cover;
